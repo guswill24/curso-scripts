@@ -1,6 +1,10 @@
 const sum = require('../');
 const assert = require('assert');
 
+test('Debe sumar correctamente', () => {
+    expect(2 + 2).toBe(5); // Esto fallará intencionalmente
+});
+
 describe('Sum', () => {
   it('should handle positive numbers', () => {
     assert.equal(sum(3, 5), 8);
