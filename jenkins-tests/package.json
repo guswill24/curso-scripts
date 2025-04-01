@@ -1,18 +1,18 @@
 {
   "name": "jenkins-tests",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Proyecto de pruebas automatizadas para pipeline Jenkins",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "mocha": "^5.2.0"
-  },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "audit:fix": "npm audit fix --force"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Gustavo Sánchez Rodríguez",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
 }
